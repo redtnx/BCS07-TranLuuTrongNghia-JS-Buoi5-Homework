@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <h2>Bài tập 1: Quản Lý Tuyển Sinh</h2>
+      <div>
+        <input
+          class="mt-2"
+          placeholder="Nhập điểm chuẩn"
+          type="number"
+          id="diemChuan"
+        />
+        <select class="mt-2" id="khuVuc">
+          <option value="0">Chọn khu vực</option>
+          <option value="2">Khu vực A</option>
+          <option value="1">Khu vực B</option>
+          <option value="0.5">Khu vực C</option>
+        </select>
+        <select class="mt-2" id="doiTuong">
+          <option value="0">Chọn đối tượng</option>
+          <option value="2.5">Đối tượng 1</option>
+          <option value="1.5">Đối tượng 2</option>
+          <option value="1">Đối tượng 3</option>
+        </select>
+      </div>
+      <div>
+        <input
+          class="mt-2"
+          placeholder="Nhập điểm thi môn 1"
+          type="number"
+          id="diem1"
+        />
+        <input
+          class="mt-2"
+          placeholder="Nhập điểm thi môn 2"
+          type="number"
+          id="diem2"
+        />
+        <input
+          class="mt-2"
+          placeholder="Nhập điểm thi môn 3"
+          type="number"
+          id="diem3"
+        />
+      </div>
+      <div>
+        <button class="btn btn-success mt-2" id="tinhDiem">Kết quả</button>
+      </div>
+      <div><p id="ketQua"></p></div>
+    </div>
+
+    <div class="container mt-5">
+      <h2>Bài tập 2: Tính Tiền Điện</h2>
+      <div>
+        <input placeholder="Họ và tên chủ hộ" id="name" type="text" />
+        <input placeholder="Chỉ số điện" id="number" type="number" />
+        <div>
+          <button id="tinhTien" class="btn btn-success mt-2">Tính tiền</button>
+        </div>
+        <div><p id="thongBao"></p></div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <h2>Bài tập 3: Tính thuế thu nhập cá nhân</h2>
+      <div>
+        <input id="name" class="mt-2" placeholder="Họ và Tên" type="text" />
+      </div>
+      <div>
+        <input
+          id="income"
+          class="mt-2"
+          placeholder="Tổng thu nhập năm"
+          type="number"
+        />
+      </div>
+      <div>
+        <input
+          id="people"
+          class="mt-2"
+          placeholder="Số người phụ thuộc"
+          type="number"
+        />
+      </div>
+      <div>
+        <button id="tinhThue" class="btn btn-success mt-2">Tính thuế</button>
+      </div>
+      <div><p class="mt-2" id="baoCaoThue"></p></div>
+    </div>
+
+    <div class="container mt-5">
+      <h2>Bài tập 4: Tính tiền cáp</h2>
+      <div>
+        <select id="typeCustomer" onchange="loaiKH()">
+          <option value="">Chọn loại khách hàng</option>
+          <option value="Nhà Dân">Nhà Dân</option>
+          <option value="Doanh Nghiệp">Doanh Nghiệp</option>
+        </select>
+      </div>
+      <div>
+        <input
+          id="customerCode"
+          class="mt-2"
+          placeholder="Nhập mã khách hàng"
+          type="text"
+        />
+      </div>
+      <div>
+        <input
+          id="numChannel"
+          class="mt-2"
+          placeholder="Số kênh cao cấp"
+          type="number"
+        />
+      </div>
+      <div id="box">
+        <input
+          id="numConnection"
+          class="mt-2"
+          placeholder="Số kết nối"
+          type="number"
+          style="display: none"
+        />
+      </div>
+      <div>
+        <button id="tinhTien2" class="btn btn-success mt-2">Tính thuế</button>
+      </div>
+      <div><p class="mt-2" id="thongBao2"></p></div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
